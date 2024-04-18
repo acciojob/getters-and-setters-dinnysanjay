@@ -10,6 +10,9 @@ class Person {
 	set age(newAge){
 		this._age = newAge;
 	}
+	get age(){
+		return this._age;
+	}
 }
 
 class Student extends Person {
@@ -26,7 +29,7 @@ class Teacher extends Person {
 		super(name, age)
 	}
 	teach(){
-		return this._name + "is teaching"
+		return this._name + " is teaching"
 	}
 }
 const person = new Person("John", 25);
