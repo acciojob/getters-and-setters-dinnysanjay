@@ -39,11 +39,11 @@ person.age = 30;
 console.log(person.age); // Output: 30
 
 const student = new Student("Alice", 22);
-student.study(); // Output: Alice is studying
-
+student.study();
+console.log(student.study());
 const teacher = new Teacher("Bob", 40);
-teacher.teach(); // Output: Bob is teaching
-
+teacher.teach();
+console.log(teacher.teach());
 // Do not change the code below this line
 window.Person = Person;
 window.Student = Student;
